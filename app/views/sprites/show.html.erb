@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sprite %>
+
+<div>
+  <%= link_to "Edit this sprite", edit_sprite_path(@sprite) %> |
+  <%= link_to "Back to sprites", sprites_path %>
+
+  <%= button_to "Destroy this sprite", @sprite, method: :delete %>
+</div>

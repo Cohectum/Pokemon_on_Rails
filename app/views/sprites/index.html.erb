@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sprites</h1>
+
+<div id="sprites">
+  <% @sprites.each do |sprite| %>
+    <%= render sprite %>
+    <p>
+      <%= link_to "Show this sprite", sprite %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New sprite", new_sprite_path %>
