@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pokemon types</h1>
+
+<div id="pokemon_types">
+  <% @pokemon_types.each do |pokemon_type| %>
+    <%= render pokemon_type %>
+    <p>
+      <%= link_to "Show this pokemon type", pokemon_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pokemon type", new_pokemon_type_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pokemon_move %>
+
+<div>
+  <%= link_to "Edit this pokemon move", edit_pokemon_move_path(@pokemon_move) %> |
+  <%= link_to "Back to pokemon moves", pokemon_moves_path %>
+
+  <%= button_to "Destroy this pokemon move", @pokemon_move, method: :delete %>
+</div>

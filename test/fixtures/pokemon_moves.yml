@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pokemonId: 1
+  moveId: 1
+  pokemon: one
+  move: one
+
+two:
+  pokemonId: 1
+  moveId: 1
+  pokemon: two
+  move: two

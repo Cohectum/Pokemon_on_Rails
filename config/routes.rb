@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :pokemon_moves
+  resources :pokemon_abilities
+  resources :pokemon_types
+  resources :moves
+  resources :abilities
+  resources :types
   resources :sprites
   resources :pokemons
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
