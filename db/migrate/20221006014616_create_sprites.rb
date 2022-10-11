@@ -7,7 +7,7 @@ class CreateSprites < ActiveRecord::Migration[7.0]
       t.string :spriteShinyBack
       t.string :spriteFemaleShinyFront
       t.string :spriteFemaleShinyBack
-      t.string :spriteFemailBack
+      t.string :spriteFemaleBack
       t.string :spriteFemaleFront
       t.belongs_to :pokemon, null: false, foreign_key: true
 
