@@ -1,24 +1,50 @@
-# README
+Welcome to Pokemon On Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I will be using PokeAPI for this project - ERD is included at /Docs/Pokemon_on_rails.drawio
 
-Things you may want to cover:
+Endpoints used
+https://pokeapi.co/api/v2/pokemon/* - Used to seed the DB with Pokemon
+https://pokeapi.co/api/v2/ability/* - Used to seed the DB with Abilities
+https://pokeapi.co/api/v2/move/* - Used to seed the DB with Moves
+https://pokeapi.co/api/v2/type/* - Used to seed the DB with types
 
-* Ruby version
 
-* System dependencies
+Tables
+* Pokemon
+  * name
+  * baseExperience
+  * hp
+  * attack
+  * defense
+  * specialAttack
+  * specialDefense
+  * speed
+  * weight
+  * height
 
-* Configuration
+* Sprites - 1 to 1 with Pokemon
+  * spriteFront
+  * spriteBack
+  * spriteShinyFront
+  * spriteShinyBack
+  * spriteFemaleFront
+  * spriteFemaleBack
+  * spriteFemaleShinyFront
+  * spriteFemaleShinyBack
 
-* Database creation
+* Types - Many to Many with Pokemon, connected with joiner table Pokemon_Types
+  * name
 
-* Database initialization
+* Abilities - Many to Many with Pokemon, connected with joiner table Pokemon_Abilities
+  * name
+  * effect
 
-* How to run the test suite
+* Moves - Many to Many with Pokemon, connected with joiner table Pokemon_Moves
+  * name
+  * accuracy
+  * effect
+  * power
+  * pp
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+All of these
