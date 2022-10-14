@@ -2,12 +2,14 @@
 
 <h1>Pokemon</h1>
 
-<div id="pokemons">
+<div id="pokemons" class="container">
   <% @pokemons.each do |pokemon| %>
-    <%= render pokemon %>
-    <p>
-      <%= link_to "Show this pokemon", pokemon %>
-    </p>
+    <div class="row tab-row">
+      <%= render pokemon %>
+      <div class="col-sm">
+        <%= link_to "View Pokemon", pokemon %>
+      </div>
+    </div>
   <% end %>
 </div>
 

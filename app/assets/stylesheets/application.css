@@ -79,3 +79,9 @@
 }
 
 .overflow-hidden { overflow: hidden; }
+
+.tab-row{
+  background-color: #DCDCDC;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
