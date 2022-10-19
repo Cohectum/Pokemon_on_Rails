@@ -2,12 +2,14 @@
 
 <h1>Moves</h1>
 
-<div id="moves">
+<div id="moves" class="container">
   <% @moves.each do |move| %>
-    <%= render move %>
-    <p>
-      <%= link_to "Show this move", move %>
-    </p>
+    <div class="row tab-row">
+      <%= render move %>
+      <div class="col showcol">
+        <%= link_to "Show this move", move %>
+      </div>
+    </div>
   <% end %>
 </div>
 

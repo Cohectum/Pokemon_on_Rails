@@ -2,12 +2,14 @@
 
 <h1>Abilities</h1>
 
-<div id="abilities">
+<div id="abilities" class="container">
   <% @abilities.each do |ability| %>
+  <div class="row tab-row">
     <%= render ability %>
-    <p>
+    <div class="col showcol">
       <%= link_to "Show this ability", ability %>
-    </p>
+    </div>
+  </div>
   <% end %>
 </div>
 

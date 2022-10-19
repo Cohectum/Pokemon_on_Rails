@@ -1,6 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @pokemon %>
+<div class="container">
+  <div class="row tab-row">
+    <%= render @pokemon %>
+  </div>
+</div>
 
 <div>
   <%= link_to "Edit this Pokemon", edit_pokemon_path(@pokemon) %> |

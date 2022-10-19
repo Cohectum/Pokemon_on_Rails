@@ -65,6 +65,6 @@ class TypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def type_params
-      params.require(:type).permit(:typeId, :name, :class)
+      params.require(:type).permit(:typeId, :name)
     end
 end

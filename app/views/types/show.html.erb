@@ -1,6 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @type %>
+<div class="container">
+  <div class="row tab-row">
+    <%= render @type %>
+  </div>
+</div>
 
 <div>
   <%= link_to "Edit this type", edit_type_path(@type) %> |

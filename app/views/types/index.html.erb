@@ -2,12 +2,14 @@
 
 <h1>Types</h1>
 
-<div id="types">
+<div id="types" class="container">
   <% @types.each do |type| %>
-    <%= render type %>
-    <p>
-      <%= link_to "Show this type", type %>
-    </p>
+    <div class="row tab-row">
+      <%= render type %>
+      <div class="col-sm showcol">
+        <%= link_to "Show this type", type %>
+      </div>
+    </div>
   <% end %>
 </div>
 
