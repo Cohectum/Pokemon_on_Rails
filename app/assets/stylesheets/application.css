@@ -6,6 +6,11 @@
   background-color: lightblue;
 }
 
+nav:not(.site-header){
+  display: flex;
+  justify-content: center;
+}
+
 /*
  * Custom translucent site header
  */

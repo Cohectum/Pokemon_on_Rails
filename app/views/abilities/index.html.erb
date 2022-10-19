@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Abilities</h1>
+<%= paginate @abilities%>
+
+<%= page_entries_info @abilities %>
 
 <div id="abilities" class="container">
   <% @abilities.each do |ability| %>

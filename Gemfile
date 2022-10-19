@@ -76,3 +76,4 @@ gem "rest-client"
 gem "net-http"
 gem 'bootstrap', '~> 5.2.1'
 gem 'jquery-rails'
+gem 'kaminari'

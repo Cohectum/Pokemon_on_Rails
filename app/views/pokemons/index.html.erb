@@ -1,6 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Pokemon</h1>
+<div class="container">
+  <div class="row">
+   <%= paginate @pokemons%>
+  </div>
+</div>
+
+<%= page_entries_info @pokemons %>
 
 <div id="pokemons" class="container">
   <% @pokemons.each do |pokemon| %>
@@ -11,6 +18,7 @@
       </div>
     </div>
   <% end %>
+
 </div>
 
 <%= link_to "New pokemon", new_pokemon_path %>

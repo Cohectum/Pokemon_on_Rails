@@ -1,6 +1,13 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Moves</h1>
+<div class="container">
+  <div class="row">
+   <%= paginate @moves%>
+  </div>
+</div>
+
+<%= page_entries_info @moves %>
 
 <div id="moves" class="container">
   <% @moves.each do |move| %>
