@@ -4,4 +4,12 @@ class HomeController < ApplicationController
 
   def index
   end
+
+  def search
+
+  end
+
+  def results
+    @results = Pokemon.where("name = #{}")
+  end
 end

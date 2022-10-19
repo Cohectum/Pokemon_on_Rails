@@ -1,4 +1,7 @@
 class Pokemon < ApplicationRecord
+  validates :id, :name, :baseExperience, :hp, :attack, :defense, :specialAttack, :specialDefense, :speed, :weight, :height, presence: true
+  validates :id, :name, uniqueness: true
+
   has_many :pokemon_types
   has_many :types, through: :pokemon_types
 
