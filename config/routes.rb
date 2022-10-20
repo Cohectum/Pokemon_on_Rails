@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'home/about'
   get 'home/index'
   get 'home/search'
+  get 'pokemons/search'
   resources :pokemon_moves
   resources :pokemon_abilities
   resources :pokemon_types

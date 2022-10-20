@@ -1,8 +1,8 @@
-<%= stylesheet_link_tag "application" %>
-<%= stylesheet_link_tag "bootstrap" %>
 <!DOCTYPE html>
 <html>
   <head>
+    <%= stylesheet_link_tag "application" %>
+    <%= stylesheet_link_tag "bootstrap" %>
     <title>Pokemon On Rails</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -18,7 +18,14 @@
         <a class="py-2 d-none d-md-inline-block" href="/moves">Moves</a>
         <a class="py-2 d-none d-md-inline-block" href="/types">Types</a>
         <a class="py-2 d-none d-md-inline-block" href="/home/about">About</a>
-        <a class="py-2 d-none d-md-inline-block" href="/home/search">Search (NYI)</a>
+        <div class="py-2 d-none d-md-inline-block">
+          <%= form_tag("/pokemons/search", :method => "get") do%>
+          <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control"%>
+          <div class="input-group-button">
+            <%= button_tag "Search", :class => 'btn btn-info', :name => nil%>
+          </div>
+          <% end %>
+        </div>
       </div>
     </nav>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
