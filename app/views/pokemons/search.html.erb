@@ -1,0 +1,13 @@
+<% if @results.empty? %>
+    <h1>No results found. :(</h1>
+<% else %>
+    <h1>Search results:</h1>
+<% end %>
+<% @results.each do |result| %>
+    <div class="row tab-row">
+      <%= render result %>
+      <div class="col-sm showcol">
+        <%= link_to "View result", result %>
+      </div>
+    </div>
+<%end%>
